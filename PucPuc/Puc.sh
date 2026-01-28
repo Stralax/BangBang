@@ -5,6 +5,7 @@ num_columns=20 #20
 dolzina=9
 znak1=${1:-"a"}
 znak2=${2:-"b"}
+frame=${3:-0.15}
 ende=0
 A1=0
 A2=0
@@ -142,7 +143,7 @@ stevec2B=-200
 stevec3B=-200
 
 clear
-while sleep 0.15; do
+while sleep $frame; do
 clear
 
 	#echo PID = $$
